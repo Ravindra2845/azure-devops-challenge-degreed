@@ -48,7 +48,6 @@ resource "azurerm_mssql_database" "db" {
   sku_name  = "S0" 
 }
 
-# Open Firewall for Azure Services AND Your Local IP (For Plan B)
 resource "azurerm_mssql_firewall_rule" "allow_azure" {
   name             = "AllowAzure"
   server_id        = azurerm_mssql_server.sql.id
@@ -121,7 +120,6 @@ output "webapp_url" {
   value = "https://${azurerm_linux_web_app.app.default_hostname}"
 }
 
-# OUTPUT FOR PLAN B (Hybrid Mode)
 output "db_server" {
   value = azurerm_mssql_server.sql.fully_qualified_domain_name
 }
