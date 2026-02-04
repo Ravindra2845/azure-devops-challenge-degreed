@@ -2,6 +2,8 @@
 
 ![Application Demo](demo.png)
 
+![Application Demo](demo_1.png)
+
 ## Overview
 A High-Availability web application deployed on Azure using Terraform. The app retrieves random quotes from an Azure SQL Database.
 
