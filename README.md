@@ -1,5 +1,7 @@
 # Daily Wisdom - Azure DevOps Challenge
 
+![Application Demo](demo.png)
+
 ## Overview
 A High-Availability web application deployed on Azure using Terraform. The app retrieves random quotes from an Azure SQL Database.
 
